@@ -46,6 +46,8 @@ p{
     width: 100%;
     position: fixed;
     background-color: var(--nav);
+    backdrop-filter: blur(.5rem);
+    z-index: 1000;
 }
 
 .nav-header-ul{

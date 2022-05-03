@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- FONT AWSOME -->
     <script src="https://kit.fontawesome.com/05b6677d4e.js" crossorigin="anonymous"></script>
     <!-- AOS SCROLL ANIMATION -->
@@ -13,13 +16,15 @@
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Arcade Landing Page</title>
 </head>
 <body>
+    <canvas id="canvas1"></canvas>
     <header>
         <nav class="nav-header">
             <ul class="nav-header-ul">
-                <li class="nav-logo">LOGO</li>
+                <li class="nav-logo"><img class="nav-logo-img" src="images/logo-preview.png" alt=""></li>
                 <li class="nav-item"><a href="#"><i class="fa-solid fa-house"></i></a></li>
                 <li class="nav-item"><a href="#"><i class="fa-solid fa-gamepad"></i></a></li>
                 <li class="nav-item"><a href="#"><i class="fa-solid fa-gamepad"></i></a></li>
@@ -32,8 +37,8 @@
         <div class="container-hero">
             <div class="img-hero"></div>
             <div class="text-hero">
-                <h1 class="title-hero">Lorem Ipsum</h1>
-                <h3 class="subtitle-hero">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+                <h1 class="title-hero">Transforma tu espcacio</h1>
+                <h3 class="subtitle-hero">Tu local o ese rincon escial de tu casa pueden ser un salon de JUEGOS.</h3>
                 <h3 class="subtitle-hero">Lorem ipsum dolor sit amet.</h3>
             </div>
         </div>
@@ -41,15 +46,14 @@
 
     <section class="section-about" data-aos="fade-up">
         <div class="container-about">
-            <h2 class="title-about">Lorem ipsum dolor.</h2>
-            <h3 class="subtitle-about">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+            <h2 class="title-about">Contá con el mejor soporte para lo que busques</h2>
+            <h3 class="subtitle-about">Instalación de dispositivos de la mano de expertos!</h3>
             <div class="caract-about" data-aos="fade-up">
-                <h3 class="title-caract">Lorem</h3>
                 <ul class="nav-caract">
-                    <li class="list-caract" data-aos="fade-up"><p class="list-caract-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptate odio, quos, cupiditate distinctio.</p></li>
-                    <li class="list-caract" data-aos="fade-up"><p class="list-caract-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptate odio, quos, cupiditate distinctio.</p></li>
-                    <li class="list-caract" data-aos="fade-up"><p class="list-caract-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptate odio, quos, cupiditate distinctio.</p></li>
-                    <li class="list-caract" data-aos="fade-up"><p class="list-caract-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptate odio, quos, cupiditate distinctio.</p></li>
+                    <li class="list-caract" data-aos="fade-up"><p class="list-caract-text">Contamos con soporte mediante chat para asesorar cualquier inconveniente sencillo en el momento</p></li>
+                    <li class="list-caract" data-aos="fade-up"><p class="list-caract-text">Garantía en los componentes (botones, palancas y luces) por 6 meses</p></li>
+                    <li class="list-caract" data-aos="fade-up"><p class="list-caract-text">Amplio catálogo de juegos ya incluidos en las máquinas</p></li>
+                    <li class="list-caract" data-aos="fade-up"><p class="list-caract-text">Costo de envío GRATUITO si estás en la ciudad de Rosario</p></li>
                 </ul>
             </div>
         </div>
@@ -57,7 +61,7 @@
 
     <section class="section-arcade">
         <div class="container-arcade">
-            <h2 class="title-arcade">Voluptatibus voluptate odio, quos, cupiditate distinctio.</h2>
+            <h2 class="title-arcade">Catálogo</h2>
             <div class="container-card-arcade">
                 <div class="card-arcade" data-aos="flip-right">
                     <div class="card-description">
@@ -104,23 +108,23 @@
 
     <section class="section-information">
         <div class="container-information">
-            <h2 class="title-information">Lorem ipsum dolor!</h2>
-            <h3 class="subtitle-information">Lorem ipsum dolor, sit amet consectetur.</h3>
+            <h2 class="title-information">Más que solo Arcades!</h2>
+            <h3 class="subtitle-information">En PlayMore! nos encanta transformar un sitio dedicado en un salón de juegos, por eso también: </h3>
             <div class="container-information-box">
                 <div class="infomation-box">
-                    <img src="icons/truck.png" alt="truck">
-                    <h3>Magnam consequuntur possimus dicta.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae similique, hic doloremque a sapiente eum sint eaque vero modi, tempora, est saepe ratione earum ut labore fugiat. Nisi, dolor. Porro!</p>
+                    <img src="images/planning.png" alt="planning arcade games">
+                    <h3>Eventos especiales</h3>
+                    <p>Realizamos alquileres de maquinas y organizamos eventos especificos como torneos de juegos de mesa o incluso una noche especial de vieo juegos en tu local.</p>
                 </div>
                 <div class="infomation-box">
-                    <img src="icons/truck.png" alt="truck">
-                    <h3>Magnam consequuntur possimus dicta.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae similique, hic doloremque a sapiente eum sint eaque vero modi, tempora, est saepe ratione earum ut labore fugiat. Nisi, dolor. Porro!</p>
+                    <img src="images/coins.png" alt="coins arcade games">
+                    <h3 class="information-title">Monetización</h3>
+                    <p class="information-text">Para que puedas sacarle provecho incluimos de manera opcional fichas para que saques fruto de la inversion y te guiamos en el proceso de implementar una experiencia que te destaque del resto.</p>
                 </div>
                 <div class="infomation-box">
-                    <img src="icons/truck.png" alt="truck">
-                    <h3>Magnam consequuntur possimus dicta.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae similique, hic doloremque a sapiente eum sint eaque vero modi, tempora, est saepe ratione earum ut labore fugiat. Nisi, dolor. Porro!</p>
+                    <img src="images/pool.png" alt="arcade pool games">
+                    <h3>Mesas de juegos dedicados</h3>
+                    <p>Podes contactar con nuestro equipo para la instalación de maquinas más grandes como Flippers o de juegos casuales sin electricidad como mesas de pool, entre otros.</p>
                 </div>
             </div>
         </div>

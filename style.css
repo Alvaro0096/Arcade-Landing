@@ -11,12 +11,21 @@ html{
 }
 
 :root{
-    --nav: rgba(74, 5, 80, .6);
-    --conteiner: rgba(50, 4, 80, 1);
+    --nav: rgba(34, 40, 49, .3);
+    --conteiner: rgb(105, 6, 172);
+    --principal-color: rgba(255, 211, 105, 1);
+    --second-color: rgba(57, 62, 70, 1);
+    --third-color: rgba(238, 238, 238, 1);
 }
 
-body{
-    font-family: Consolas, sans-serif;
+#canvas1{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(#350c9c , #09011a);
+    z-index: -1000;
 }
 
 ul{
@@ -29,18 +38,31 @@ a{
 
 h1{
     font-size: 5rem;
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    letter-spacing: .5rem;
 }
 
 h2{
     font-size: 4.2rem;
+    font-family: 'Radio Canada', sans-serif;
 }
 
 h3{
     font-size: 3.5rem;
+    font-family: 'Radio Canada', sans-serif;
 }
 
 p{
     font-size: 2rem;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p{
+    color: var(--third-color);
 }
 
 /* BEGIN NAV */
@@ -65,8 +87,11 @@ p{
 
 .nav-logo{
     flex: .7;
-    font-size: 3.5rem;
-    color: #fff;
+}
+
+.nav-logo-img{
+    width: 8rem;
+    height: 8rem;
 }
 
 .nav-item{
@@ -74,22 +99,22 @@ p{
 }
 
 .nav-item a{
-    color: #fff;
+    color: var(--principal-color);
     transition: .5s;
 }
 
 .nav-item a:hover{
-    color: #3f3a3a;
+    color: var(--second-color);
 }
 
 /* BEGIN HERO */
 
 .hero{
     height: 100vh;
-    background-image: url('images/rejilla-neon.png');
+    /* background-image: url('images/rejilla-neon.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .container-hero{
@@ -104,7 +129,7 @@ p{
 .img-hero{
     height: 30rem;
     width: 30rem;
-    background-image: url('icons/arcade-icon.png');
+    background-image: url('images/logo-preview.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,6 +140,10 @@ p{
 .subtitle-hero{
     color: #fff;
     text-align: center;
+}
+
+.title-hero{
+    text-transform: uppercase;
 }
 
 /* BEGIN ABOUT */
@@ -140,15 +169,15 @@ p{
     margin: 2rem 0;
 }
 
-.title-caract{
-    text-align: left;
-}
-
 .nav-caract{
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .list-caract{
+    width: 100%;
+    text-align: left;
     padding: 2rem 0;
 }
 
@@ -156,7 +185,9 @@ p{
     content: '\f058';
     font-family: "Font Awesome 5 Free"; 
     font-size: 3rem;
+    margin-right: 3rem;
     float: left;
+    color: var(--principal-color);
 }
 
 /* BEGIN ARCADE */
@@ -186,7 +217,7 @@ p{
     position: relative;
     width: 36rem;
     height: 48rem;
-    background: #122936;
+    background: var(--principal-color);
     border-radius: 2rem;
     overflow: hidden;
 }
@@ -198,7 +229,7 @@ p{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #2196f3;
+    background: var(--conteiner);
     transform: skewY(345deg);
     transition: .5s;
 }
@@ -239,14 +270,14 @@ p{
 
 .card-title{
     font-size: 3.2rem;
-    color: #fff;
+    color: var(--second-color);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .card-price{
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--second-color);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -257,8 +288,8 @@ p{
     top: 20rem;
     padding: 1rem 3rem;
     margin-top: 1.5rem;
-    color: #fff;
-    background: #2196f3;
+    color: var(--second-color);
+    background: var(--nav);
     border: none;
     border-radius: 1rem;
     text-transform: uppercase;
@@ -282,7 +313,7 @@ p{
 
 .card-description-text{
     font-size: 3rem;
-    color: #fff;
+    color: #000;
     letter-spacing: 1px;
 }
 
@@ -295,14 +326,13 @@ p{
 
 .title-information,
 .subtitle-information{
-    margin-top: 2rem;
+    margin: 5rem 0;
 }
 
 .container-information-box{
     margin: 0 1rem;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -313,6 +343,11 @@ p{
 
 .infomation-box img{
     width: 21rem;
+}
+
+.information-text{
+    text-align: center;
+    padding: 0 2rem;
 }
 
 /* BEGIN BUTTON CONTACT */

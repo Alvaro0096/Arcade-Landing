@@ -1,5 +1,6 @@
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -37,19 +38,19 @@ a{
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-family: 'Anton', sans-serif;
     font-style: italic;
     letter-spacing: .5rem;
 }
 
 h2{
-    font-size: 4.2rem;
+    font-size: 4rem;
     font-family: 'Radio Canada', sans-serif;
 }
 
 h3{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: 'Radio Canada', sans-serif;
 }
 
@@ -131,7 +132,6 @@ p{
     background-repeat: no-repeat;
 }
 
-
 .title-hero,
 .subtitle-hero{
     color: #fff;
@@ -140,6 +140,28 @@ p{
 
 .title-hero{
     text-transform: uppercase;
+}
+
+.subtitle-hero{
+    padding: .5rem 1rem;
+}
+
+@media (max-width: 600px){
+
+.img-hero{
+    height: 25rem;
+    width: 20rem;
+    margin-top: 5rem;
+}
+
+.title-hero{
+    text-transform: uppercase;
+}
+
+.subtitle-hero{
+    padding: .5rem .5rem;
+}
+    
 }
 
 /* BEGIN ABOUT */
@@ -183,9 +205,23 @@ p{
     content: '\f058';
     font-family: "Font Awesome 5 Free"; 
     font-size: 3rem;
-    margin-right: 3rem;
+    margin-right: 1rem;
+    height: 3rem;
     float: left;
     color: var(--principal-color);
+}
+
+@media(max-width: 600px){
+
+.container-about{
+    width: 100%;
+    padding: .5rem;
+}
+
+.list-caract::before{
+    height: 8rem;
+}
+
 }
 
 /* BEGIN ARCADE */

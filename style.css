@@ -24,7 +24,7 @@ html{
     height: 100vh;
     top: 0;
     left: 0;
-    background: radial-gradient(#350c9c , #09011a);
+    background: radial-gradient(#ffd369 , #ffd300);
     z-index: -1000;
 }
 
@@ -111,10 +111,6 @@ p{
 
 .hero{
     height: 100vh;
-    /* background-image: url('images/rejilla-neon.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
 }
 
 .container-hero{
@@ -258,7 +254,7 @@ p{
 }
 
 .card-arcade:hover .card-img img{
-    max-width: 40%;
+    max-width: 70%;
 }
 
 .card-content{
@@ -354,8 +350,8 @@ p{
 }
 
 .information-text{
-    text-align: center;
-    padding: 0 2rem;
+    text-align: left;
+    padding: .5rem .5rem;
 }
 
 /* BEGIN BUTTON CONTACT */
